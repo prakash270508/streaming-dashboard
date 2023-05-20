@@ -1,19 +1,18 @@
-body{
+body {
   overflow-x: hidden;
 }
 
-.selected{
-  background-color: #6C5CD3;
+.selected {
+  background-color: #6c5cd3;
   color: white;
   border-radius: 20px;
   cursor: pointer;
 }
-.notSelected{
+.notSelected {
   cursor: pointer;
 }
 
-
-.search{
+.search {
   margin-left: 20vw;
   transform: translate(-50%, -50%);
   font-size: 16px;
@@ -28,22 +27,22 @@ body{
   transition: all 0.5s;
   box-shadow: 0 4px 8px 0 rgba(152, 150, 150, 0.2), 0 6px 20px 0 #c8c6d0;
 }
-.search::placeholder{
+.search::placeholder {
   color: rgb(102, 102, 102);
   opacity: 0;
   transition: opacity 160ms ease-out;
 }
-.search:focus::placeholder{
+.search:focus::placeholder {
   opacity: 1;
 }
-.search:hover{
+.search:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #b5bff4;
 }
 .search:focus,
-.search:not(:placeholder-shown){
+.search:not(:placeholder-shown) {
   width: 450px;
   height: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #b5bff4;;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #b5bff4;
 }
 
 .no-focus-outline:focus {
@@ -69,21 +68,48 @@ body{
   padding-left: 0;
 }
 
-.bell{
+.bell {
   font-size: large;
   margin-left: 16vw;
   margin-top: 7px;
 }
 
-.img{
+.img {
   border-radius: 50px;
 }
 
-.live{
+.live {
   background-color: rgb(249, 89, 89);
   width: 10%;
   padding: 4px;
   border-radius: 10px;
   margin-left: -5vw;
+  margin-bottom: 20px;
 }
 
+.details {
+  margin-left: -6vw;
+  float: left;
+}
+.viewBtn {
+  margin-left: -5vw;
+  float: left;
+  margin-top: 3vw;
+}
+
+.viewBtn {
+  z-index: 10;
+  background-color: #7a6bde;
+  color: white;
+  border-radius: 10px;
+  margin-left: -8vw;
+  margin-top: 5vw;
+}
+.viewBtn:hover {
+  background-color: #6251d4;
+  color: white;
+}
+
+.carousel-control-prev {
+  height: 50%;
+}

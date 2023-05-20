@@ -1,5 +1,4 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 
 export default function Carousel() {
   return (
@@ -10,7 +9,16 @@ export default function Carousel() {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          <div className="carousel-indicators"></div>
+        <div className="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              className="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+          </div>
           <div className="carousel-item active">
             <img
               src="https://trecobox.com.br/wp-content/uploads/2022/06/Call-of-Duty-Warzone-1278x720.jpg"
@@ -21,25 +29,45 @@ export default function Carousel() {
             <div
               className="carousel-caption d-none d-md-block"
               style={{
-                marginBottom: "7vw"
+                marginBottom: "1vw",
               }}
             >
               <div className="live">
                 {" "}
-                <i className="fa-solid fa-wifi" ></i> Live
+                <i className="fa-solid fa-wifi"></i> Live
               </div>
-              <h2
-                style={{ fontSize: "35px", fontWeight: "500" }}
-                className="my-2"
-              >
-                Get All
-              </h2>
-              <h1 style={{ fontSize: "45px", fontWeight: "700" }}>
-                ALL GOOD STUFF
-              </h1>
-              <button className="btn viewBtn">
-                View More Products <FaArrowRight />
-              </button>
+              <div className="my-2 details">
+                <div
+                  className="my-2"
+                  style={{
+                    fontFamily: "monospace",
+                    fontSize: "25px",
+                    float: "left",
+                  }}
+                >
+                  Call Of Duty
+                </div>
+                <h2 className="">
+                  <b>Warzone 2.0</b>
+                </h2>
+                <div className="userDetails my-1" style={{ float: "left" }}>
+                  <img
+                    src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?cs=srgb&dl=pexels-italo-melo-2379005.jpg&fm=jpg"
+                    height={25}
+                    width={25}
+                    style={{ borderRadius: "35px" }}
+                    className="mx-2"
+                    alt=""
+                  />
+                  <span>Us . English</span>
+                </div>
+                <button
+                  className="btn viewBtn"
+                  onClick={() => console.log("Clicked")}
+                >
+                  Watch
+                </button>
+              </div>
             </div>
           </div>
         </div>
